@@ -1,0 +1,18 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Web Calendar (Java)/*
+!/Web Calendar (Java)/task/
+/Web Calendar (Java)/task/*
+!/Web Calendar (Java)/task/resources
+!/Web Calendar (Java)/task/src
+!/Web Calendar (Java)/task/build.gradle
