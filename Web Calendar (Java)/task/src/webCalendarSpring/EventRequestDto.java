@@ -1,32 +1,16 @@
 package webCalendarSpring;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 
-@Entity
-public class Event {
-    @Id
-    @GeneratedValue
-    private Integer id;
-
+public class EventRequestDto {
     @NotBlank
     private String event;
 
     @NotNull
     private LocalDate date;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getEvent() {
         return event;
@@ -42,13 +26,5 @@ public class Event {
 
     public void setDate(LocalDate date) {
         this.date = date;
-    }
-
-    @Override
-    public String toString() {
-        return "Event{" +
-                "event='" + event + '\'' +
-                ", date=" + date +
-                '}';
     }
 }

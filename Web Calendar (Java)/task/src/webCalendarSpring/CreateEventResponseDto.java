@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.time.LocalDate;
 
 @JsonPropertyOrder({"message", "event", "date"})
-public class EventDto {
+public class CreateEventResponseDto {
     private final String event;
     private final LocalDate date;
 
-    public EventDto(Event event) {
-        this.event = event.getEvent();
-        this.date = event.getDate();
+    public CreateEventResponseDto(String event, LocalDate date) {
+        this.event = event;
+        this.date = date;
     }
 
     public String getMessage() {
