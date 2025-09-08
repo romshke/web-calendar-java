@@ -12,7 +12,7 @@ import java.time.LocalDate;
 public class Event {
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
 
     @NotBlank
     private String event;
@@ -20,11 +20,11 @@ public class Event {
     @NotNull
     private LocalDate date;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
